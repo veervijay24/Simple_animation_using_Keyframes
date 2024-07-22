@@ -1,0 +1,50 @@
+//animation creation:
+@keyframes animation_name{
+from{ 
+        //initial styles
+   }
+to{
+       //final styles
+   }
+}
+
+//Animation apply:
+.name{
+animation-name: animation_name;
+animation-duration: 4s;
+animation-delay: 1s;
+}
+
+
+
+@keyframes anime{
+0%{
+left: 0;
+background-color: green;
+top:0;
+rotate: 0deg;
+}
+50%{
+left:75%;
+background-color: red;
+top: 0;
+rotate: 360deg;
+}
+
+100%{
+left: 75%;
+background-color: blue;
+top:50%;
+rotate: 360deg;
+}
+}
+
+animation-fill-mode: forwards/backwards
+(the property you wants to retain after the end of animation)
+
+animation-iteration-count: 2/3/4/infinite;
+(number of times animation will run)
+
+animation-timing-function: ease-in/ease-out/linear/cubic-Bezier();
+(this sets how animation will move)
+animation-direction: normal/reverse/alternate;
